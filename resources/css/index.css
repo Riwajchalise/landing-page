@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+/* Header */
+#header {
+  background-color: deeppink;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.header-item {
+  font-size: 30px;
+  padding: 20px;
+}
+
+.header-icon {
+  display: none;
+}
+
+/* Cover */
+#cover {
+  background-color: deepskyblue;
+  height: 200px;
+  text-align: center;
+}
+/* Introduction */
+#introduction {
+  background-color: dimgray;
+  height: 200px;
+  text-align: center;
+}
+/* Blog */
+#blog {
+  background-color: dodgerblue;
+  height: 200px;
+  text-align: center;
+}
+/* Github */
+#github {
+  background-color: firebrick;
+  height: 200px;
+  text-align: center;
+}
+/* Youtube */
+#youtube {
+  background-color: turquoise;
+  height: 200px;
+  text-align: center;
+}
+/* Contributor */
+#contributor {
+  background-color: forestgreen;
+  height: 200px;
+  text-align: center;
+}
+/* Portfolio */
+#portfolio {
+  background-color: fuchsia;
+  height: 200px;
+  text-align: center;
+}
+/* Footer */
+#footer {
+  background-color: gainsboro;
+  height: 200px;
+  text-align: center;
+}

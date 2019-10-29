@@ -1,0 +1,30 @@
+@media screen and (max-width: 600px) {
+  #header .header-item:not(:first-child) {
+    display: none;
+  }
+
+  #header .header-icon {
+    display: block;
+    float: right;
+    font-size: 30px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #header.responsive {
+    flex-direction: column;
+    position: relative;
+  }
+
+  #header.responsive .header-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  #header.responsive .header-item {
+    display: block;
+    text-align: left;
+  }
+}
