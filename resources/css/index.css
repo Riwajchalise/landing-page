@@ -3,12 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
+  color: #ffffff;
 }
 
 /* Header */
 #header {
-  background-color: deeppink;
+  background-color: #ff1493;
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -84,42 +84,88 @@
 
 /* Introduction */
 #introduction {
-  background-color: dimgray;
-  height: 200px;
+  display: flex;
+  justify-content: flex-start;
+  flex: 100%;
+  height: auto;
+  background-color: whitesmoke;
   text-align: center;
+}
+
+.intro-left {
+  flex: 50%;
+}
+
+.intro-left .intro-title {
+  color: black;
+  text-align: left;
+  padding: 20px 0px 20px 100px;
+}
+
+.intro-left .intro-line {
+  height: 10px;
+  width: 25%;
+  background-color: #9dabbe;
+  margin: 0px 0px 0px 100px;
+}
+
+.intro-left .intro-content {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #868f9b;
+  text-align: justify;
+  padding: 20px 0px 20px 100px;
+}
+
+.intro-content .intro-special {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #868f9b;
+  padding: 10px 0px 10px 0px;
+}
+
+.intro-special i {
+  color: #868f9b;
+  font-size: 20px;
+  padding: 0px 20px 0px 0px;
+}
+
+.intro-right {
+  flex: 50%;
 }
 
 /* Blog */
 #blog {
-  background-color: dodgerblue;
+  background-color: #1e90ff;
   height: 200px;
   text-align: center;
 }
 
 /* Github */
 #github {
-  background-color: firebrick;
+  background-color: #b22222;
   height: 200px;
   text-align: center;
 }
 
 /* Youtube */
 #youtube {
-  background-color: turquoise;
+  background-color: #40e0d0;
   height: 200px;
   text-align: center;
 }
 
 /* Contributor */
 #contributor {
-  background-color: forestgreen;
+  background-color: #228b22;
   height: 200px;
   text-align: center;
 }
 
 /* Portfolio */
 #portfolio {
-  background-color: fuchsia;
+  background-color: #ff00ff;
   height: 200px;
   text-align: center;
 }
