@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
 }
 
@@ -67,7 +68,83 @@
 }
 /* Footer */
 #footer {
-  background-color: gainsboro;
-  height: 200px;
+  background-color: #263238;
+}
+
+.footer-containt {
+  max-width: 95vw;
+  margin: auto 10%;
+  padding: 20px 0;
+  color: #ffffff;
   text-align: center;
+}
+
+.text-title {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  font-size: 3em;
+}
+
+.contact {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.contact .icon {
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon img {
+  width: 60%;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  position: absolute;
+  width: 60px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 2px 0;
+  border-radius: 6px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 66%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltiptext {
+  top: 115%;
+  left: 90%;
+  margin-left: -60px;
+  font-size: 12px;
 }
