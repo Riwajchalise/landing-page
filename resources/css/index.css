@@ -27,20 +27,20 @@
 }
 
 .sticky-header .brand-name {
-  color: black;
+  color: #000000;
   font-size: 35px;
   letter-spacing: 10px;
 }
 
 .sticky-header .header-item a {
-  color: black;
+  color: #000000;
   font-weight: bold;
   padding: 10px 20px 10px 20px;
 }
 
 .sticky-header .log-in a {
   color: white;
-  background-color: black;
+  background-color: #000000;
 } 
 
 .brand-name {
@@ -79,8 +79,8 @@
 }
 
 .log-in a {
-  background: white;
-  color: black;
+  background: #ffffff;
+  color: #000000;
   text-decoration: none;
   padding: 10px;
   transition: 0.5s;
