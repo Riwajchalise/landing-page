@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://kit.fontawesome.com/e40be82818.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="resources/css/index.css" />
     <link rel="stylesheet" href="resources/css/responsive.css" />
     <link rel="stylesheet" href="resources/css/animation.css" />
@@ -36,7 +37,34 @@
       </div>
     </div>
     <div id="introduction">
-      <h1>Introduction</h1>
+      <div id="intro-left">
+        <div id="intro-title">About Me</div>
+        <div id="intro-content">
+          <div id="content-main"></div>
+          <div class="content-special"><i class="fas fa-check-square"></i></div>
+          <div class="content-special"><i class="fas fa-check-square"></i></div>
+          <div class="content-special"><i class="fas fa-check-square"></i></div>
+          <div class="content-special"><i class="fas fa-check-square"></i></div>
+        </div>
+      </div>
+      <div id="intro-right">
+        <div id="slider-image">
+          <div class="image-show image-active"></div>
+          <div class="image-show"></div>
+          <div class="image-show"></div>
+          <div class="image-show"></div>
+          <div id="image-back" onclick="backImage()"><i class="fas fa-chevron-left"></i></div>
+          <div id="image-forward" onclick="forwardImage()">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        <div id="slider-dot">
+          <div class="dot dot-active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
     </div>
     <div id="blog">
       <h1>Blog</h1>
@@ -79,5 +107,5 @@
   </body>
 
   <script src="resources/js/responsive.js"></script>
-
+  <script src="resources/js/introduction.js"></script>
 </html>
