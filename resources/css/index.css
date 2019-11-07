@@ -26,46 +26,104 @@
 
 /* Cover */
 #cover {
-  background-color: deepskyblue;
-  height: 200px;
-  text-align: center;
+  background-image: url(http://duyngd.com/wp-content/uploads/2019/01/cropped-pexels-photo-747964-2-2.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
+
+.overlay {
+  background-color: #00000065;
+  height: 60vh;
+  width: 100%;
+  position: absolute;   /*absolute with the cover*/
+  z-index: 1;
+}
+
+.cover-title {
+  position: relative;
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  border-right: 4px solid #ffffffd3;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(17) 0.5s 1 normal both,
+  blink-caret .75s infinite;
+  z-index: 1;
+}
+
+.cover-title h1 {
+  font-weight: 300;
+  font-size: 4em;
+  letter-spacing: 0.1em;
+}
+
+.cover-subtitle {
+  position: relative;
+  height: 3em;
+  top: 2vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.cover-subtitle h3 {
+  font-weight: 200;
+  font-size: 1.5em;
+  letter-spacing: 0em;
+  animation: slide-up 4.5s 1;
+}
+
 /* Introduction */
 #introduction {
   background-color: dimgray;
   height: 200px;
   text-align: center;
 }
+
 /* Blog */
 #blog {
   background-color: dodgerblue;
   height: 200px;
   text-align: center;
 }
+
 /* Github */
 #github {
   background-color: firebrick;
   height: 200px;
   text-align: center;
 }
+
 /* Youtube */
 #youtube {
   background-color: turquoise;
   height: 200px;
   text-align: center;
 }
+
 /* Contributor */
 #contributor {
   background-color: forestgreen;
   height: 200px;
   text-align: center;
 }
+
 /* Portfolio */
 #portfolio {
   background-color: fuchsia;
   height: 200px;
   text-align: center;
 }
+
 /* Footer */
 #footer {
   background-color: #263238;
