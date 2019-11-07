@@ -29,6 +29,7 @@
   }
 }
 
+/*Cover*/
 @media screen and (max-width: 630px) {
   .cover-title {
     position: relative;
@@ -55,14 +56,5 @@
     font-size: 1em;
     letter-spacing: 0.1em;
     animation: slide-up 4s 1;
-  }
-}
-
-@keyframes typing-responsive {
-  from {
-    width: 0;
-  }
-  to {
-    width: 22rem;
   }
 }
