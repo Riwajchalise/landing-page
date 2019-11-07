@@ -91,26 +91,27 @@
   text-align: center;
 }
 
-.intro-left {
+#intro-left {
   flex: 50%;
   padding-left: 50px;
 }
 
-.intro-left .intro-title {
+#intro-left #intro-title {
   color: #000000;
   text-align: left;
   padding: 20px 0px;
   font-weight: bold;
   font-size: 35px;
+  border-bottom: 1px solid #868f9b;
 }
 
-.intro-left .intro-line {
+#intro-left #intro-line {
   height: 10px;
   width: 25%;
   background-color: #9dabbe;
 }
 
-.intro-left .intro-content {
+#intro-left #intro-content {
   font-size: 20px;
   line-height: 30px;
   color: #868f9b;
@@ -118,11 +119,11 @@
   padding: 20px 0px;
 }
 
-.intro-content .content-main {
+#intro-content #content-main {
   color: #868f9b;
 }
 
-.intro-content .content-special {
+#intro-content .content-special {
   color: #868f9b;
   padding-top: 10px;
 }
@@ -132,28 +133,28 @@
   padding-right: 20px;
 }
 
-.intro-right {
+#intro-right {
   flex: 50%;
   padding: 30px 50px;
 }
 
-.intro-right .slider-image {
+#intro-right #slider-image {
   height: 330px;
   position: relative;
 }
 
-.slider-image .image-show {
+#slider-image .image-show {
   display: none;
   width: 100%;
   height: 100%;
 }
 
-.slider-image .image-active {
+#slider-image .image-active {
   display: block;
 }
 
-.slider-image .image-back {
-  background-color: #6969e7;
+#slider-image #image-back {
+  background-color: #868f9b;
   height: 50px;
   width: 50px;
   position: absolute;
@@ -164,8 +165,8 @@
   align-items: center;
 }
 
-.slider-image .image-forward {
-  background-color: #6969e7;
+#slider-image #image-forward {
+  background-color: #868f9b;
   height: 50px;
   width: 50px;
   position: absolute;
@@ -176,7 +177,7 @@
   align-items: center;
 }
 
-.intro-right .slider-dot {
+#intro-right #slider-dot {
   height: 30px;
   padding: 5px 240px;
   display: flex;
@@ -184,16 +185,17 @@
   align-items: center;
 }
 
-.slider-dot .dot {
-  background-color: #1e90ff;
-  height: 10px;
-  width: 15px;
+#slider-dot .dot {
+  background-color: #a3c4e6;
+  height: 5px;
+  width: 10px;
   border-radius: 40%;
 }
 
-.slider-dot .dot-active {
-  height: 20px;
-  width: 25px;
+#slider-dot .dot-active {
+  background-color: #5390ce;
+  height: 10px;
+  width: 15px;
 }
 
 /* Blog */

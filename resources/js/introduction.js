@@ -10,8 +10,8 @@ const dummy = {
   special: 'Hello World',
 };
 
-var content = document.getElementsByClassName('content-main');
-content[0].innerHTML = dummy.content;
+var main = document.getElementById('content-main');
+main.innerHTML = dummy.content;
 
 var special = document.getElementsByClassName('content-special');
 for (var i = 0; i < special.length; i++) {
