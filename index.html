@@ -38,19 +38,34 @@
     </div>
     <div id="introduction">
       <div class="intro-left">
-        <h1 class="intro-title">Introduction</h1>
+        <div class="intro-title">Introduction</div>
         <div class="intro-line"></div>
         <div class="intro-content">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime voluptatibus eveniet,
-          repudiandae excepturi ducimus animi omnis rerum? Accusantium alias repellendus minima
-          harum, similique ea mollitia sit omnis deleniti totam perferendis!
-          <div class="intro-special"><i class="fas fa-check-square"></i>Hello World</div>
-          <div class="intro-special"><i class="fas fa-check-square"></i>Hello World</div>
-          <div class="intro-special"><i class="fas fa-check-square"></i>Hello World</div>
-          <div class="intro-special"><i class="fas fa-check-square"></i>Hello World</div>
+          <div class="content-main"></div>
+          <div class="content-special"><i class="fas fa-check-square"></i></div>
+          <div class="content-special"><i class="fas fa-check-square"></i></div>
+          <div class="content-special"><i class="fas fa-check-square"></i></div>
+          <div class="content-special"><i class="fas fa-check-square"></i></div>
         </div>
       </div>
-      <div class="intro-right"></div>
+      <div class="intro-right">
+        <div class="slider-image">
+          <div class="image-show image-active"></div>
+          <div class="image-show"></div>
+          <div class="image-show"></div>
+          <div class="image-show"></div>
+          <div class="image-back" onclick="backImage()"><i class="fas fa-chevron-left"></i></div>
+          <div class="image-forward" onclick="forwardImage()">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="slider-dot">
+          <div class="dot dot-active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
     </div>
     <div id="blog">
       <h1>Blog</h1>
@@ -93,5 +108,5 @@
   </body>
 
   <script src="resources/js/responsive.js"></script>
-
+  <script src="resources/js/introduction.js"></script>
 </html>
