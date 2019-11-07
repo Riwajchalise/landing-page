@@ -1,14 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ong Dev Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://kit.fontawesome.com/e40be82818.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="resources/css/index.css" />
+    <link rel="stylesheet" href="resources/css/responsive.css" />
+    <link rel="stylesheet" href="resources/css/animation.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Ong Dev Landing Page</title>
-</head>
+  <body>
+    <div id="header">
+      <div class="header-item"><a href="#">Link0</a></div>
+      <div class="header-item"><a href="#">Link1</a></div>
+      <div class="header-item"><a href="#">Link2</a></div>
+      <div class="header-item"><a href="#">Link3</a></div>
+      <div class="header-item"><a href="#">Link4</a></div>
+      <div class="header-item"><a href="#">Link5</a></div>
+      <div class="header-icon">
+        <a href="#"><i class="fa fa-bars" onclick="headerTogger()"></i></a>
+      </div>
+    </div>
+    <div id="cover">
+      <div class="overlay"></div>
+      <div class="cover-title">
+          <h1>ÔNG DEV VUI TÍNH</h1>
+      </div>
+      <div class="cover-subtitle">
+          <h3>Developer | Streamer | Traveler</h3>
+      </div>
+    </div>
+    <div id="introduction">
+      <div id="intro-left">
+        <div id="intro-title">About Me</div>
+        <div id="intro-content">
+          <div id="content-main"></div>
+          <div class="content-special"><i class="fas fa-check-square"></i></div>
+          <div class="content-special"><i class="fas fa-check-square"></i></div>
+          <div class="content-special"><i class="fas fa-check-square"></i></div>
+          <div class="content-special"><i class="fas fa-check-square"></i></div>
+        </div>
+      </div>
+      <div id="intro-right">
+        <div id="slider-image">
+          <div class="image-show image-active"></div>
+          <div class="image-show"></div>
+          <div class="image-show"></div>
+          <div class="image-show"></div>
+          <div id="image-back" onclick="backImage()"><i class="fas fa-chevron-left"></i></div>
+          <div id="image-forward" onclick="forwardImage()">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        <div id="slider-dot">
+          <div class="dot dot-active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </div>
+    <div id="blog">
+      <h1>Blog</h1>
+    </div>
+    <div id="github">
+      <h1>Github</h1>
+    </div>
+    <div id="youtube">
+      <h1>Youtube</h1>
+    </div>
+    <div id="contributor">
+      <h1>Contributor</h1>
+    </div>
+    <div id="portfolio">
+      <h1>Portfolio</h1>
+    </div>
+    <div id="footer">
+          <div id="text-title">Ong Dev</div>
+          <div id="contact">
+            <div class="icon tooltip">
+              <img src="resources/images/blogging.svg" alt="Blog" />
+              <div class="tooltiptext">Blog</div>
+            </div>
+            <div class="icon tooltip">
+              <img src="resources/images/youtube.svg" alt="Youtube" />
+              <div class="tooltiptext">Youtube</div>
+            </div>
+            <div class="icon tooltip">
+              <img src="resources/images/github-logo.svg" alt="Github" />
+              <div class="tooltiptext">Github</div>
+            </div>
+            <div class="icon tooltip">
+              <img src="resources/images/profiles.svg" alt="Portfolio" />
+              <div class="tooltiptext">Profile</div>
+            </div>
+          </div>
+          <p>© 2019 OngDev. All Rights Reserved.</p>
+        </div>
+    </div>
+  </body>
 
-<body>
-</body>
-
+  <script src="resources/js/responsive.js"></script>
+  <script src="resources/js/introduction.js"></script>
 </html>
