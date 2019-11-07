@@ -19,7 +19,7 @@
 
 @keyframes blink-caret {
   from {
-    border-right-color: rgba(255, 255, 255, 0.75);
+    border-right-color: #ffffffec;
   }
   to {
     border-right-color: transparent;
