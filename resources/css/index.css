@@ -79,7 +79,7 @@
   font-weight: 200;
   font-size: 1.5em;
   letter-spacing: 0em;
-  animation: slide-up 6.5s 1;
+  animation: slide-up 4.5s 1;
 }
 
 @keyframes typing {
@@ -105,11 +105,11 @@
     margin-top: 5em;
     opacity: 0;
   }
-  50% {
+  70% {
     margin-top: 2em;
     opacity: 0.5;
   }
-  66%{
+  85%{
     opacity: 0.3;
   }
   100% {
