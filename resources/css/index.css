@@ -3,90 +3,88 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #ffffff;
+  color: white ;
 }
 
 /* Header */
 #header {
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  position: fixed;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
   height: 80px;
-  padding: 0px 50px 0px 50px;
   text-transform: uppercase;
-  transition: 0.2s;
+  letter-spacing: 1.2px;
+  position: fixed;
+  z-index: 2;
+  transition: 0.2s ease;
 }
 
 .sticky-header {
-  background: white;
+  background: #ffffff;
   box-shadow: 2px 2px 4px #6666665d;
 }
 
 .sticky-header .brand-name {
   color: #000000;
-  font-size: 35px;
-  letter-spacing: 10px;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+
+.sticky-header .log-in a {
+  color: #000000;
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
 .sticky-header .header-item a {
   color: #000000;
-  font-weight: bold;
-  padding: 10px 20px 10px 20px;
 }
 
-.sticky-header .log-in a {
-  color: white;
-  background-color: #000000;
-} 
+.sticky-header .header-item a:hover {
+  background: #00000010;
+  border-radius: 2px;
+}
 
 .brand-name {
-  font-size: 40px;
-  padding: 20px;
-  font-weight: bold;
-  letter-spacing: 15px;
-  margin: auto;
-}
-
-.header-item {
-  font-size: 15px;
-  padding: 10px;
-  font-weight: 600;
-  margin: auto 200px auto 0px;
-  display: inline-block;
-}
-
-.header-item a {
-  text-decoration: none;
-  padding: 5px 15px 5px 15px;
   float: left;
-  transition: 0.2s ease;
-}
-
-.header-item a:hover {
-  background-color: #bbbbbb3b;
-  border-radius: 5%;
+  padding: 8px;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 4px;
 }
 
 .log-in {
-  font-size: 15px;
-  font-weight: bold;
-  padding: 20px;
-  margin: auto;
+  float: right;
 }
 
 .log-in a {
-  background: #ffffff;
-  color: #000000;
+  display: inline-block;
   text-decoration: none;
-  padding: 10px;
-  transition: 0.5s;
+  font-size: 15px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.header-item {
+  float: right;
+}
+
+.header-item a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 20px;
+  margin-top: 30px;
+  transition: 0.1s ease;
+}
+
+.header-item a:hover {
+  background: #00000030;
+  border-radius: 2px;
 }
 
 .header-icon {
+  cursor: pointer;
   display: none;
 }
 

@@ -1,32 +1,72 @@
 /* Header */
-@media screen and (max-width: 768px) {
-  #header .header-item:not(:first-child) {
-    display: none;
+@media screen and (max-width: 600px) {
+  .header-icon {
+    position: absolute;
+    float: left;
+    display: block;
+    font-size: 20px;
+    margin: 25px 10px;
   }
 
-  #header .header-icon {
-    display: block;
-    float: right;
-    font-size: 30px;
-    padding: 20px;
+  .fa-bars {
+    color: #ffffff;
+  }
+
+  #header {
+    position: fixed;
+    background: #1b1b1b;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .header-item a {
+    width: 100%;
+    text-align: right;
+    padding: 15px;
+    margin: 30px -10px;
+  }
+
+  .brand-name {
+    color: #1b1b1b;
+  }
+
+  .sticky-header .brand-name {
+    color: #1b1b1b;;
+  } 
+
+  .sticky-header .log-in a {
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 1.2px;
+  }
+
+  .sticky-header .header-item a {
+    color: #ffffff;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   #header.responsive {
-    flex-direction: column;
-    position: relative;
+    position: fixed;
+    background: #ffffff;
+    height: 80px;
   }
 
   #header.responsive .header-icon {
     position: absolute;
-    top: 0;
-    right: 0;
+    float: right;
+  }
+  
+  #header.responsive .fa-bars {
+    color: #000000b0;
   }
 
   #header.responsive .header-item {
-    display: block;
-    text-align: left;
+    display: none; 
+  }
+
+  #header.responsive .log-in a {
+    color: black;
   }
 }
 
@@ -59,6 +99,7 @@
     animation: slide-up 4s 1;
   }
 }
+
 /* Introdution */
 @media screen and (max-width: 1024px) {
   .intro-left .intro-title {
