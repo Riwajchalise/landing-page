@@ -8,6 +8,8 @@
 
   #header #brand-name {
     color: #000000;
+    text-align: center;
+    flex-grow: 1;
   }
 
   #header #header-icon {
@@ -28,10 +30,6 @@
 
   #header #header-item a {
     color: #ffffff;
-  }
-
-  #header #log-in a {
-    color: #000000;
   }
 }
 
@@ -60,12 +58,6 @@
 
   #header.responsive #brand-name {
     display: none;
-  }
-
-  #header.responsive #log-in a {
-    color: #ffffff;
-    font-weight: normal;
-    letter-spacing: 1.2px;
   }
 }
 
@@ -101,107 +93,56 @@
 
 /* Introdution */
 @media screen and (max-width: 1024px) {
-  .intro-left .intro-title {
+  #intro-left #intro-title {
     padding: 15px 0px;
     font-size: 30px;
-  }
-
-  .intro-left .intro-line {
-    width: 30%;
-  }
-
-  .intro-left .intro-content {
-    line-height: 25px;
+  }  
+  
+  #intro-left #intro-content {
     padding: 15px 0px;
-  }
-
-  .intro-content .content-special {
-    padding-top: 10px;
-  }
-
-  .intro-right .slider-image {
-    height: 320px;
-  }
-
-  .slider-image .image-back {
-    top: 42.1875%;
-  }
-
-  .slider-image .image-forward {
-    top: 42.1875%;
-  }
-
-  .intro-right .slider-dot {
-    padding: 5px 160px;
+  }  
+  
+  #intro-right #slider-dot {
+    padding: 5px 140px;
   }
 }
-
+ 
 @media screen and (max-width: 768px) {
   #introduction {
     justify-content: space-around;
     flex-wrap: wrap;
-  }
-
-  #intro-left {
-    flex: 100%;
-    padding: 0px 50px;
-  }
-  #intro-left #intro-title {
-    padding: 15px 0px;
-    font-size: 30px;
-  }
-
+  }  
+  
   #intro-left #intro-content {
     line-height: 25px;
-    padding: 15px 0px;
-  }
-
-  #intro-content .content-special {
-    padding-top: 10px;
-  }
-
-  #intro-right {
-    flex: 100%;
-  }
-
+  }  
+  
+  #intro-right #slider-image {
+    height: 250px;
+  }  
+  
   #intro-right #slider-dot {
-    padding: 5px 290px;
+    padding: 5px 270px;
   }
 }
-
+ 
 @media screen and (max-width: 425px) {
-  #intro-left {
-    flex: 100%;
-  }
-
-  #intro-right {
-    flex: 100%;
-  }
-
-  #intro-right #slider-image {
-    height: 260px;
-  }
-
-  #intro-right #slider-dot {
-    padding: 5px 120px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  #intro-right #slider-image {
-    height: 200px;
-  }
-
   #intro-right #slider-dot {
     padding: 5px 90px;
   }
 }
-
-@media screen and (max-width: 320px) {
+ 
+@media screen and (max-width: 375px) {
   #intro-right #slider-image {
     height: 200px;
+  }  
+  
+  #intro-right #slider-dot {
+    padding: 5px 70px;
   }
-
+}
+ 
+@media screen and (max-width: 320px) {
   #intro-right #slider-dot {
     padding: 5px 50px;
   }
