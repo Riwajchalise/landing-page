@@ -6,11 +6,11 @@
     height: 80px;
   }
 
-  #header .brand-name {
+  #header #brand-name {
     color: #000000;
   }
 
-  #header .header-icon {
+  #header #header-icon {
     position: absolute;
     float: left;
     display: block;
@@ -22,15 +22,15 @@
     color: #000000b0;
   }
 
-  #header .header-item {
+  #header #header-item {
     display: none; 
   }
 
-  #header .header-item a {
+  #header #header-item a {
     color: #ffffff;
   }
 
-  #header .log-in a {
+  #header #log-in a {
     color: #000000;
   }
 }
@@ -47,22 +47,22 @@
     height: 100vh;
   }
 
-  #header.responsive .header-item {
+  #header.responsive #header-item {
     display: inline-block;
   }
 
-  #header.responsive .header-item a {
+  #header.responsive #header-item a {
     width: 100%;
     text-align: right;
     padding: 15px;
     margin: 30px -10px;
   }
 
-  #header.responsive .brand-name {
+  #header.responsive #brand-name {
     display: none;
   }
 
-  #header.responsive .log-in a {
+  #header.responsive #log-in a {
     color: #ffffff;
     font-weight: normal;
     letter-spacing: 1.2px;
