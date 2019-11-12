@@ -1,72 +1,71 @@
 /* Header */
 @media screen and (max-width: 600px) {
-  .header-icon {
+  #header {
+    position: fixed;
+    background: #ffffff;
+    height: 80px;
+  }
+
+  #header .brand-name {
+    color: #000000;
+  }
+
+  #header .header-icon {
     position: absolute;
     float: left;
     display: block;
     font-size: 20px;
     margin: 25px 10px;
   }
+  
+  #header .fa-bars {
+    color: #000000b0;
+  }
 
-  .fa-bars {
+  #header .header-item {
+    display: none; 
+  }
+
+  #header .header-item a {
     color: #ffffff;
   }
 
-  #header {
+  #header .log-in a {
+    color: #000000;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #header.responsive .fa-bars {
+    color: #ffffff;
+  }
+
+  #header.responsive {
     position: fixed;
     background: #1b1b1b;
     width: 100%;
     height: 100vh;
   }
 
-  .header-item a {
+  #header.responsive .header-item {
+    display: inline-block;
+  }
+
+  #header.responsive .header-item a {
     width: 100%;
     text-align: right;
     padding: 15px;
     margin: 30px -10px;
   }
 
-  .brand-name {
-    color: #1b1b1b;
-  }
-
-  .sticky-header .brand-name {
-    color: #1b1b1b;;
-  } 
-
-  .sticky-header .log-in a {
-    color: #ffffff;
-    font-weight: normal;
-    letter-spacing: 1.2px;
-  }
-
-  .sticky-header .header-item a {
-    color: #ffffff;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #header.responsive {
-    position: fixed;
-    background: #ffffff;
-    height: 80px;
-  }
-
-  #header.responsive .header-icon {
-    position: absolute;
-    float: right;
-  }
-  
-  #header.responsive .fa-bars {
-    color: #000000b0;
-  }
-
-  #header.responsive .header-item {
-    display: none; 
+  #header.responsive .brand-name {
+    display: none;
   }
 
   #header.responsive .log-in a {
-    color: black;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 1.2px;
   }
 }
 
