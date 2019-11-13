@@ -1,15 +1,18 @@
-function headerTogger() {
-  var x = document.getElementById('header');
-  x.classList.toggle('responsive');
-}
+var header = document.getElementById('header');
 
-window.onscroll = function() { this.stickyHeader() };
-var header = document.getElementById("header");
-function stickyHeader() {
+headerTogger = () => {
+  header.classList.toggle('responsive');
+};
+
+window.onscroll = () => { 
+  this.stickyHeader() 
+};
+
+stickyHeader = () => {
   if(window.pageYOffset > 0) {
-    header.classList.add("sticky-header");
+    header.classList.add('sticky-header');
   }
   else {
-    header.classList.remove("sticky-header");
+    header.classList.remove('sticky-header');
   }
-}
+};
