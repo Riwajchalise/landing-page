@@ -5,7 +5,7 @@ headerTogger = () => {
 };
 
 window.onscroll = () => { 
-  this.stickyHeader() 
+  this.stickyHeader();
 };
 
 stickyHeader = () => {

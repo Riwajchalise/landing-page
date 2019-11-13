@@ -1,5 +1,5 @@
 /* Header */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   #header {
     position: fixed;
     background: #ffffff;
@@ -33,7 +33,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   #header.responsive .fa-bars {
     color: #ffffff;
   }
@@ -62,7 +62,7 @@
 }
 
 /*Cover*/
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 576px) {
   .cover-title {
     position: relative;
     border-right: 2px solid rgba(255,255,255,0.75);
@@ -76,7 +76,7 @@
   }
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 576px) {
   .cover-subtitle {
     height: 1.5em;
     overflow: hidden;
@@ -92,58 +92,17 @@
 }
 
 /* Introdution */
-@media screen and (max-width: 1024px) {
-  #intro-left #intro-title {
-    padding: 15px 0px;
-    font-size: 30px;
-  }  
-  
-  #intro-left #intro-content {
-    padding: 15px 0px;
-  }  
-  
-  #intro-right #slider-dot {
-    padding: 5px 140px;
-  }
-}
- 
-@media screen and (max-width: 768px) {
-  #introduction {
+@media screen and (max-width: 576px) {
+#introduction {
     justify-content: space-around;
     flex-wrap: wrap;
   }  
   
-  #intro-left #intro-content {
+#intro-left #intro-content {
     line-height: 25px;
   }  
-  
-  #intro-right #slider-image {
+
+#intro-right #slider-image {
     height: 250px;
-  }  
-  
-  #intro-right #slider-dot {
-    padding: 5px 270px;
-  }
-}
- 
-@media screen and (max-width: 425px) {
-  #intro-right #slider-dot {
-    padding: 5px 90px;
-  }
-}
- 
-@media screen and (max-width: 375px) {
-  #intro-right #slider-image {
-    height: 200px;
-  }  
-  
-  #intro-right #slider-dot {
-    padding: 5px 70px;
-  }
-}
- 
-@media screen and (max-width: 320px) {
-  #intro-right #slider-dot {
-    padding: 5px 50px;
   }
 }
