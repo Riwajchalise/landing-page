@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="resources/css/index.css" />
     <link rel="stylesheet" href="resources/css/responsive.css" />
     <link rel="stylesheet" href="resources/css/animation.css" />
+    <link rel="stylesheet" href="resources/css/card.css">
+    <link rel="stylesheet" href="resources/css/flip_card.css">
   </head>
 
   <body>
@@ -75,7 +77,32 @@
       <h1>Github</h1>
     </div>
     <div id="youtube">
-      <h1>Youtube</h1>
+      <div class="card">
+        <div class="card-container">
+          <img src="resources/images/dummyimage1.jpg" />
+          <div class="content">
+            <h4>Name or anything.....</h4>
+            <p>Write some anything.....</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="resources/images/dummyimage1.jpg"/>
+            <div class="content">
+              <h4>Name or anything.....</h4>
+              <p>Write some anything.....</p>
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <h4>Name or anything.....</h4>
+            <p>Write some anything.....</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, nemo.</p>
+          </div>
+        </div>
+      </div>
     </div>
     <div id="contributor">
       <h1>Contributor</h1>
