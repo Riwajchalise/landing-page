@@ -99,6 +99,7 @@
 .cover-title {
   position: relative;
   width: 80%;
+  color: #fff;
   display: flex;
   flex-flow: column;
   text-align: center;
@@ -117,6 +118,7 @@
 
 .cover-subtitle {
   position: relative;
+  color: #fff;
   height: 3em;
   top: 2vh;
   overflow: hidden;
