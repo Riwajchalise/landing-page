@@ -13,27 +13,30 @@
     <link rel="stylesheet" href="resources/css/index.css" />
     <link rel="stylesheet" href="resources/css/responsive.css" />
     <link rel="stylesheet" href="resources/css/animation.css" />
+    <link rel="stylesheet" href="resources/css/card.css" />
   </head>
 
   <body>
     <div id="header">
-      <div class="header-item"><a href="#">Link0</a></div>
-      <div class="header-item"><a href="#">Link1</a></div>
-      <div class="header-item"><a href="#">Link2</a></div>
-      <div class="header-item"><a href="#">Link3</a></div>
-      <div class="header-item"><a href="#">Link4</a></div>
-      <div class="header-item"><a href="#">Link5</a></div>
-      <div class="header-icon">
+      <div id="brand-name">Ông Dev</div>
+      <div id="header-item">
+        <a href="#">Blog</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Youtube</a>
+        <a href="#">Github</a>
+        <a href="#">Log in</a>
+      </div>
+      <div id="header-icon">
         <a href="#"><i class="fa fa-bars" onclick="headerTogger()"></i></a>
       </div>
     </div>
     <div id="cover">
       <div class="overlay"></div>
       <div class="cover-title">
-          <h1>ÔNG DEV VUI TÍNH</h1>
+        <h1>ÔNG DEV VUI TÍNH</h1>
       </div>
       <div class="cover-subtitle">
-          <h3>Developer | Streamer | Traveler</h3>
+        <h3>Developer | Streamer | Traveler</h3>
       </div>
     </div>
     <div id="introduction">
@@ -59,10 +62,10 @@
           </div>
         </div>
         <div id="slider-dot">
-          <div class="dot dot-active"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
+          <i class="dot dot-active fas fa-circle"></i>
+          <i class="dot fas fa-circle"></i>
+          <i class="dot fas fa-circle"></i>
+          <i class="dot fas fa-circle"></i>
         </div>
       </div>
     </div>
@@ -82,27 +85,26 @@
       <h1>Portfolio</h1>
     </div>
     <div id="footer">
-          <div id="text-title">Ong Dev</div>
-          <div id="contact">
-            <div class="icon tooltip">
-              <img src="resources/images/blogging.svg" alt="Blog" />
-              <div class="tooltiptext">Blog</div>
-            </div>
-            <div class="icon tooltip">
-              <img src="resources/images/youtube.svg" alt="Youtube" />
-              <div class="tooltiptext">Youtube</div>
-            </div>
-            <div class="icon tooltip">
-              <img src="resources/images/github-logo.svg" alt="Github" />
-              <div class="tooltiptext">Github</div>
-            </div>
-            <div class="icon tooltip">
-              <img src="resources/images/profiles.svg" alt="Portfolio" />
-              <div class="tooltiptext">Profile</div>
-            </div>
-          </div>
-          <p>© 2019 OngDev. All Rights Reserved.</p>
+      <div id="text-title">Ong Dev</div>
+      <div id="contact">
+        <div class="icon tooltip">
+          <img src="resources/images/blogging.svg" alt="Blog" />
+          <div class="tooltiptext">Blog</div>
         </div>
+        <div class="icon tooltip">
+          <img src="resources/images/youtube.svg" alt="Youtube" />
+          <div class="tooltiptext">Youtube</div>
+        </div>
+        <div class="icon tooltip">
+          <img src="resources/images/github-logo.svg" alt="Github" />
+          <div class="tooltiptext">Github</div>
+        </div>
+        <div class="icon tooltip">
+          <img src="resources/images/profiles.svg" alt="Portfolio" />
+          <div class="tooltiptext">Profile</div>
+        </div>
+      </div>
+      <p>© 2019 OngDev. All Rights Reserved.</p>
     </div>
   </body>
 
