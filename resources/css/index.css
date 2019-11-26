@@ -350,9 +350,13 @@
   color: #ffffff;
 }
 .container h1 {
-  padding-top: 1em;
+  padding-top: 0.8em;
   font-weight: 300;
-  font-size: 4em;
+  font-size: 2em;
+}
+
+.container:nth-child(2) h1 {
+  padding-top: 0em;
 }
 
 .people {
@@ -367,32 +371,37 @@
 }
 
 .person {
-  padding: 3em 2em;
+  padding: 1em 1em;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   justify-items: center;
   text-align: center;
   position: relative;
+  align-items: flex-end;
 }
 
-.person img {
-  width: 18vh;
-  height: 18vh;
-  border-radius: 50%;
-  opacity: 0.6;
-  transition: 0.5s;
+.person img{
+  display: block;
+  width: 8em;
+  height: 8em;
+  border-radius: 10%;
 }
 
-.person img:hover {
-  width: 20vh;
-  height: 20vh;
-  opacity: 1;
+.person .info {
+  height: auto;
+  padding-left: 0.5em;
+  overflow: hidden;
+  text-align: left;
+  font-weight: 100;
+  color: #9dabbe;
+  position: relative;
 }
 
-.person h2 {
-  font-size: 1.5em;
+.person .info h2 {
+  font-size: 1em;
   font-weight: 200;
+  color: #ffffff;
 }
 
 /* Portfolio */
