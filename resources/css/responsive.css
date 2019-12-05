@@ -124,6 +124,7 @@
     height: auto;
     opacity: 0.75;
     box-shadow: 10px 10px 25px #0000000a;
+    transition: 0.2s;
   }
 
   #github .card-container .card:hover {
