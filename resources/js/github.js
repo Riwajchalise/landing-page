@@ -13,7 +13,7 @@ const dummyGithub = [
     }
 ];
 
-var cardlist = document.getElementsByClassName('card-list');
+var cardlist = document.getElementById('github').getElementsByClassName('card-list')[0];
 
 for (var i = 0; i < dummyGithub.length; i++){
     var title = document.createElement('DIV');
@@ -33,5 +33,5 @@ for (var i = 0; i < dummyGithub.length; i++){
     container.classList.add('card-container');
     container.appendChild(gcard);
 
-    cardlist[1].appendChild(container);
+    cardlist.appendChild(container);
 }
