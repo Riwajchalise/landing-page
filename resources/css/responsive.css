@@ -114,6 +114,33 @@
   }
 }
 
+/* Github */
+@media screen and (min-width: 720px) {
+  #github .card-list .card-container {
+    width: 320px;
+  }
+
+  #github .card-container .card {
+    height: auto;
+    opacity: 0.75;
+    box-shadow: 10px 10px 25px #0000000a;
+  }
+
+  #github .card-container .card:hover {
+    box-shadow: 10px 10px 30px #00000020;
+    opacity: 1;
+    transform: translateY(10px);
+    transform: scale(1.02);
+    transition: 0.2s;
+  }
+
+  #git-button:hover {
+    background-color: #f5f5f5;
+    color: #868f9b;
+    animation: shake 1s infinite;
+  }
+}
+
 /*Contributor*/
 @media screen and (min-width: 540px) {
   .container {
