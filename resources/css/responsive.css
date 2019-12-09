@@ -19,13 +19,13 @@
     font-size: 25px;
     margin: 30px 35px;
   }
-  
+
   #header .fa-bars {
     color: #000000b0;
   }
 
   #header #header-item {
-    display: none; 
+    display: none;
   }
 
   #header #header-item a {
@@ -65,10 +65,10 @@
 @media screen and (max-width: 576px) {
   .cover-title {
     position: relative;
-    border-right: 2px solid rgba(255,255,255,0.75);
-    animation: typing-responsive 2.5s steps(17) 0.5s 1 normal both, blink-caret .75s infinite;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    animation: typing-responsive 2.5s steps(17) 0.5s 1 normal both, blink-caret 0.75s infinite;
   }
-  
+
   .cover-title h1 {
     font-weight: 300;
     font-size: 2.2em;
@@ -93,16 +93,156 @@
 
 /* Introdution */
 @media screen and (max-width: 576px) {
-#introduction {
+  #introduction {
     justify-content: space-around;
     flex-wrap: wrap;
-  }  
-  
-#intro-left #intro-content {
-    line-height: 25px;
-  }  
+  }
 
-#intro-right #slider-image {
+  #intro-right #slider-image {
     height: 250px;
+  }
+}
+
+/* Blog */
+@media screen and (min-width: 320px) {
+  .card-list .card-container {
+    width: 320px;
+  }
+
+  #blog #blog-direction {
+    width: 300px;
+  }
+}
+
+/* Github */
+@media screen and (min-width: 720px) {
+  #github .card-list .card-container {
+    width: 320px;
+  }
+
+  #github .card-container .card {
+    height: auto;
+    opacity: 0.75;
+    box-shadow: 10px 10px 25px #0000000a;
+    transition: 0.2s;
+  }
+
+  #github .card-container .card:hover {
+    box-shadow: 10px 10px 30px #00000020;
+    opacity: 1;
+    transform: translateY(10px);
+    transform: scale(1.02);
+    transition: 0.2s;
+  }
+
+  #git-button:hover {
+    background-color: #f5f5f5;
+    color: #868f9b;
+    animation: shake 1s infinite;
+  }
+}
+
+/*Contributor*/
+@media screen and (min-width: 540px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+  
+  .container h1 {
+    padding-top: 1em;
+    font-weight: 300;
+    font-size: 2.3em;
+  }
+
+  .person {
+    padding: 1.5em 1em;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .person img {
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    opacity: 1;
+  }
+
+  .person .info {
+    text-align: center;
+    padding-left: 0em;
+    top: 0;
+  }
+
+  .person .info h2 {
+    font-size: 1.2em;
+    font-weight: 200;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .people {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .container h1 {
+    padding-top: 1em;
+    font-weight: 300;
+    font-size: 3em;
+  }
+
+  .person {
+    padding: 2em 2em;
+    padding-bottom: 1em;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .person img {
+    width: 9em;
+    height: 9em;
+    opacity: 0.6;
+    transition: 0.5s;
+    border-radius: 50%;
+  }
+
+  .person:hover img {
+    width: 10em;
+    height: 10em;
+    opacity: 1;
+  }
+
+  .person .info {
+    height: 4.8em;
+    padding-left: 0em;    
+    top: 0;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .person .info h2 {
+    font-size: 1.5em;
+    font-weight: 100;
+  }
+
+  .person .job {
+    margin-top: 90%;
+    transition: 0.5s;
+  }
+
+  .person:hover .job {
+    margin-top: 0;
   }
 }

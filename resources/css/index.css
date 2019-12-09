@@ -164,7 +164,7 @@
 
 #intro-left #intro-content {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 25px;
   color: #868f9b;
   text-align: justify;
   padding: 20px 0px;
@@ -238,7 +238,7 @@
 
 #slider-dot .dot {
   font-size: 15px;
-  color: #e1e5eb73;
+  color: #a1aabb73;
   padding: 10px;
 }
 
@@ -248,16 +248,119 @@
 
 /* Blog */
 #blog {
-  background-color: #1e90ff;
-  height: 425px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#blog .card-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 5px;
+  color: #868f9b;
+}
+
+.card-list .card-container {
+  height: 400px;
+  margin-top: 20px;
+}
+
+.card-list .post-title {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 5px;
+}
+
+.card-list .post-content {
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.card-list .post-view {
+  text-align: center;
+  padding: 5px;
+}
+
+#blog #blog-direction {
+  background-color: #868f9b;
+  color: #f5f5f5;
+  border-radius: 5px;
+  height: 50px;
+  width: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#blog #blog-direction:hover {
+  background-color: #f5f5f5;
+  color: #868f9b;
+  animation: shake 1s infinite;
 }
 
 /* Github */
 #github {
-  background-color: #b22222;
-  height: 425px;
-  text-align: center;
+  background-color: #f5f5f5;
+  height: auto;
+  text-align: left;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+#github .card-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px;
+  color: #242D4C;
+}
+
+#github .card-list .card-container {
+  height: auto;
+  width: 100%;
+}
+
+#github .card-container .card {
+  height: 100%;
+  box-shadow: 10px 10px 25px #0000000a;
+  padding: 20px;
+}
+
+.git-title {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#git-button {
+  background-color: #868f9b;
+  color: #f5f5f5;
+  border-radius: 5px;
+  height: 50px;
+  width: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  font-size: 16px;
+}
+
+.fa-github {
+  padding: 10px;
+  font-size: 20px;
 }
 
 /* Youtube */
@@ -271,9 +374,80 @@
 
 /* Contributor */
 #contributor {
-  background-color: #228b22;
-  height: 425px;
+  background-color: #263238;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
   text-align: center;
+  position: relative;
+}
+
+.container {
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+.container h1 {
+  padding-top: 0.8em;
+  font-weight: 300;
+  font-size: 2em;
+}
+
+.container:nth-child(2) h1 {
+  padding-top: 0em;
+}
+
+.people {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.person {
+  padding: 1em 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  position: relative;
+  align-items: flex-end;
+}
+
+.person img{
+  display: block;
+  width: 8em;
+  height: 8em;
+  border-radius: 10%;
+}
+
+.person .info {
+  height: auto;
+  padding-left: 0.5em;
+  overflow: hidden;
+  text-align: left;
+  font-weight: 100;
+  color: #9dabbe;
+  position: relative;
+}
+
+.person .info h2 {
+  font-size: 1em;
+  font-weight: 200;
+  color: #ffffff;
 }
 
 /* Portfolio */
