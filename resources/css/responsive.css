@@ -173,8 +173,14 @@
     font-size: 2.3em;
   }
 
+  .people {
+    justify-content: center;
+    padding-left: 0;
+  }
+
   .person {
     padding: 1.5em 1em;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
@@ -191,7 +197,7 @@
   .person .info {
     text-align: center;
     padding-left: 0em;
-    top: 0;
+    margin: auto;
   }
 
   .person .info h2 {
@@ -242,7 +248,7 @@
   .person .info {
     height: 4.8em;
     padding-left: 0em;
-    top: 0;
+    margin: auto;
     text-align: center;
     overflow: hidden;
     transition: 0.5s;
