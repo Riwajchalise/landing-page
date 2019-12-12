@@ -90,7 +90,7 @@
 }
 
 .overlay {
-  background-color: rgba(160, 64, 64, 0.65); 
+  background-color: rgba(0, 0, 0, 0.65); 
   height: 100vh;
   width: 100%;
   position: absolute; /*absolute with the cover*/
@@ -531,9 +531,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   justify-items: center;
   text-align: center;
+  padding-left: 2em;
 }
 
 .person {
