@@ -17,20 +17,20 @@
     display: block;
   }
 
-  #header-item {
+  #header-items-container {
     line-height: 1;
     margin: 0px auto;
     width: 60%;
     text-align: center;
   }
 
-  #header-item a {
+  #header-items-container a {
     margin: 0px 10px;
     display: inline-block;
     transition: 0.2s;
   }
 
-  #header-item a:hover {
+  #header-items-container a:hover {
     color: #ff4500;
   }
 

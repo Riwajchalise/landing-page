@@ -35,14 +35,14 @@
 }
 
 #header-icon .fa-bars {
-  color: white;
+  color: #ffffff;
 }
 
 .items {
   display: none;
 }
 
-#header-item a {
+#header-items-container a {
   text-decoration: none;
   color: #ffffff;
   line-height: 3;
@@ -61,7 +61,7 @@
   height: 80px;
 }
 
-.sticky-header #header-item a {
+.sticky-header #header-items-container a {
   line-height: 0.6;
 }
 
