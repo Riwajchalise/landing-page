@@ -8,70 +8,76 @@
 /* Header */
 #header {
   width: 100%;
-  height: 80px;
+  height: 100px;
   text-transform: uppercase;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.3px;
   position: fixed;
   z-index: 2;
-  transition: 0.2s ease;
-  display: flex;
-}
-
-.sticky-header {
-  background: #ffffff;
-  box-shadow: 2px 2px 4px #6666665d;
-}
-
-.sticky-header #brand-name {
-  color: #000000;
-  font-size: 30px;
-  letter-spacing: 4px;
-}
-
-.sticky-header #header-item a {
-  color: #000000;
-}
-
-.sticky-header #header-item a:hover {
-  background: #00000010;
-  border-radius: 2px;
+  padding: 0px 50px 0px 50px;
+  transition: 0.2s;
+  align-items: center;
 }
 
 #brand-name {
-  width: 300px;
-  padding: 15px;
-  margin-left: 20px;
-  margin-top: 10px;
-  font-size: 30px;
-  font-weight: 500;
-  letter-spacing: 4px;
-  color: #fff;
-}
-
-#header-item {
-  flex-grow: 1;
-  text-align: right;
-  width: 100%;
-}
-
-#header-item a {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 15px;
-  margin-right: 20px;
-  margin-top: 30px;
-  transition: 0.1s ease;
-  color: #fff;
-}
-
-#header-item a:hover {
-  background: #00000030;
-  border-radius: 2px;
+  margin: 0 auto;
+  font-size: 1.7em;
+  font-weight: 400;
+  text-align: left;
+  color: #ffffff;
+  line-height: 1;
+  margin: 25px 0px;
 }
 
 #header-icon {
-  cursor: pointer;
+  font-size: 25px;
+  float: right;
+  margin: 25px 0px;
+}
+
+#header-icon .fa-bars {
+  color: #ffffff;
+}
+
+.items {
   display: none;
+}
+
+#header-items-container a {
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 3;
+}
+
+#log-in a {
+  text-decoration: none;
+  color: #000000;
+  line-height: 3;
+  padding: 10px 35px 10px 0px;
+  background-color: #ffffff;
+}
+
+#header.sticky-header {
+  background-color: #141414 !important;
+  height: 80px;
+}
+
+.sticky-header #header-items-container a {
+  line-height: 0.6;
+}
+
+.sticky-header #log-in a {
+  line-height: 0.6;
+}
+
+#header.responsive {
+  background: #141414;
+  height: 100vh;
+}
+
+.responsive .items {
+  display: block;
+  width: 100px;
+  margin-right: -20px;
 }
 
 /* Cover */
@@ -337,6 +343,7 @@
 #github .card-list .card-container {
   height: auto;
   width: 100%;
+  margin-top: 20px;
 }
 
 #github .card-container .card {
