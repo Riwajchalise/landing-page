@@ -18,23 +18,23 @@
 
   <body>
     <div id="header">
-      <div id="brand-name">Ông Dev</div>
-      <div id="header-item">
-        <a href="#">Blog</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Youtube</a>
-        <a href="#">Github</a>
-        <a href="#">Log in</a>
-      </div>
       <div id="header-icon">
-        <a href="#"><i class="fa fa-bars" onclick="headerTogger()"></i></a>
+          <a href="#"><i class="fa fa-bars" onclick="headerTogger()"></i></a>
+      </div>
+      <div id="brand-name">Ông Dev</div>
+      <div id="header-items-container" class="items">
+        <a href="#">Blog</a>
+        <a href="#">Github</a>
+        <a href="#">Youtube</a>
+        <a href="#">Portfolio</a>
+      </div>
+      <div id="log-in" class="items">
+        <a href="#">Log in</a>
       </div>
     </div>
     <div id="cover">
       <div class="overlay"></div>
-      <div class="cover-title">
-        <h1>ÔNG DEV VUI TÍNH</h1>
-      </div>
+      <div class="cover-title"></div>
       <div class="cover-subtitle">
         <h3>Developer | Streamer | Traveler</h3>
       </div>
@@ -71,19 +71,30 @@
     </div>
     <div id="blog">
       <div class="card-list"></div>
-      <div id="blog-direction">
+      <div id="blog-direction" class="navigate">
         <div id="post-publish"><i class="fas fa-blog"></i> Go to Blog</div>
       </div>
     </div>
     <div id="github">
       <div class="card-list"></div>
-      <div id="git-button">
+      <div id="git-button" class="navigate">
         <i class="fab fa-github"></i>
         Go to Github
       </div>
     </div>
     <div id="youtube">
-      <h1>Youtube</h1>
+      <div class="card-list"></div>
+      <div id="youtube-direction" class="navigate">
+        <div id="youtube-publish"><i class="fab fa-youtube"></i> Go to MyTube</div>
+      </div>
+      <div id="youtube-sub">
+        <div id="youtube-avatar" class="navigate"></div>
+        <div id="youtube-info">
+          <div id="name">ÔNG DEV</div>
+          <div id="subscribe">10.000.000 Subscribe</div>
+        </div>
+        <div id="youtube-subscribe" class="navigate">Subscribe</div>
+      </div>
     </div>
     <div id="contributor">
       <div class="container">
@@ -125,6 +136,8 @@
   <script src="resources/js/responsive.js"></script>
   <script src="resources/js/introduction.js"></script>
   <script src="resources/js/blog.js"></script>
+  <script src="resources/js/youtube.js"></script>
   <script src="resources/js/contributor.js"></script>
   <script src="resources/js/github.js"></script>
+  <script src="resources/js/cover.js"></script>
 </html>
