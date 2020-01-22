@@ -11,8 +11,8 @@ window.onscroll = () => {
 
 stickyHeader = () => {
   if (window.pageYOffset > 0) {
-    header.classList.add('sticky-header');
+    header.classList.add('non-transparent-bg');
   } else {
-    header.classList.remove('sticky-header');
+    header.classList.remove('non-transparent-bg');
   }
 };
