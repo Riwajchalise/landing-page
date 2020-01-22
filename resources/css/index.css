@@ -8,7 +8,7 @@
 /* Header */
 #header {
   width: 100%;
-  height: 100px;
+  height: 80px;
   text-transform: uppercase;
   letter-spacing: 1.3px;
   position: fixed;
@@ -56,22 +56,17 @@
   background-color: #ffffff;
 }
 
-#header.sticky-header {
-  background-color: #141414 !important;
-  height: 80px;
-}
-
-.sticky-header #header-items-container a {
-  line-height: 0.6;
-}
-
-.sticky-header #log-in a {
-  line-height: 0.6;
-}
-
 #header.responsive {
-  background: #141414;
   height: 100vh;
+}
+
+#header.non-transparent-bg {
+  background-color: #141414;
+}
+
+.non-transparent-bg #header-items-container a,
+.non-transparent-bg #log-in a {
+  line-height: 3;
 }
 
 .responsive .items {
