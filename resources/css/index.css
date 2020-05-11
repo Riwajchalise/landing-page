@@ -241,7 +241,11 @@ p.bottom-text {
   position: relative;
 }
 
-#form .type-form:not(:first-child) {
+#wc-user {
+	color: rgb(255, 255, 255);
+}
+
+form .type-form:not(:first-child) {
   display: none;
 }
 
