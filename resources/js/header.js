@@ -1,30 +1,13 @@
-var body = document.getElementsByTagName('BODY')[0];
-var popup = document.getElementById('popup');
-var form = document.getElementById('form');
-var login = document.getElementById('login');
-var register = document.getElementById('register');
-var have = document.getElementById('have');
-var need = document.getElementById('need');
-var forgot = document.getElementById('forgot');
-var typeForm = document.getElementsByClassName('type-form');
+const loginForm = document.getElementById('log-in-form');
+const registerForm = document.getElementById('register-form');
 
-togglePopup = () => {
-  popup.classList.toggle('d-flex');
-  form.classList.toggle('d-flex');
-  login.style.display = 'flex';
-  register.style.display = 'none';
-};
+function togglePopup(popupId) {
+  const popup = document.getElementById(popupId);
+  popup.classList.toggle('d-none');
+  body.classList.toggle('disable-scrolling');
+}
 
-changeForm = () => {
-  if (login.style.display == 'flex' || register.style.display == 'none') {
-    typeForm[0].style.display = 'none';
-    typeForm[1].style.display = 'flex';
-    login.style.display = 'none';
-    register.style.display = 'flex';
-  } else if (login.style.display == 'none' || register.style.display == 'flex') {
-    typeForm[0].style.display = 'flex';
-    typeForm[1].style.display = 'none';
-    login.style.display = 'flex';
-    register.style.display = 'none';
-  }
-};
+function changeForm() {
+  loginForm.classList.toggle('d-none');
+  registerForm.classList.toggle('d-none');
+}
