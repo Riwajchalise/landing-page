@@ -1,6 +1,6 @@
-const dummyCover = 'resources/images/dummyimage3.jpg';
+const dummyCover = 'https://healthitanalytics.com/images/site/features/ThinkstockPhotos-518311330.jpg';
 
-const str = 'ÔNG DEV VUI TÍNH';
+const str = 'Why Use Lead Predict?';
 
 let coverBackground = document.getElementById('cover'); 
 let titleContainer = document.getElementsByClassName('cover-title');
@@ -14,7 +14,7 @@ coverBackground.setAttribute('style',
 add = (i) => {
   if(i >= str.length) return;
 	coverTitle.innerHTML += str[i];
-  setTimeout(add, 250, i+1);
+  setTimeout(add, 180, i+1);
 }
 
 add(0);
